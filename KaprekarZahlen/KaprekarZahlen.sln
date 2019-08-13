@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaprekarZahlen", "KaprekarZ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaprekarUnitTestProject", "KaprekarUnitTestProject\KaprekarUnitTestProject.csproj", "{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person", "Person\Person.csproj", "{7D14FC92-B67C-4FAF-9213-8D2A26C652DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestPerson", "UnitTestPerson\UnitTestPerson.csproj", "{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D14FC92-B67C-4FAF-9213-8D2A26C652DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D14FC92-B67C-4FAF-9213-8D2A26C652DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D14FC92-B67C-4FAF-9213-8D2A26C652DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D14FC92-B67C-4FAF-9213-8D2A26C652DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
