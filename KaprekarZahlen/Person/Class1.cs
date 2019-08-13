@@ -8,14 +8,15 @@ namespace Person
 {
     public class Person
     {
-        public bool Ledig { get; }
-        public bool Verheiratet { get; }
-        public bool Geschieden{get; }
-        public bool Verwitwet { get; }
+        public bool Ledig { get; set; }
+        public bool Verheiratet { get; set; }
+        public bool Geschieden{ get; set; }
+        public bool Verwitwet { get; set; }
 
         public void heiraten()
         {
-            
+            Person neuling = new Person();
+            neuling.Verheiratet = true; 
         }
         public void annulieren()
         {
