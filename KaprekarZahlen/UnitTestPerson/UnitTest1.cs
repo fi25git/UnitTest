@@ -16,5 +16,17 @@ namespace UnitTestPerson
             Assert.AreEqual(false, neuling.Verheiratet);
             Assert.AreEqual(false, neuling.Verwitwet);
         }
+
+        [TestMethod]
+        public void TestPersonLedig2Verheiratet()
+        {
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(true, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
+
+        }
     }
 }
