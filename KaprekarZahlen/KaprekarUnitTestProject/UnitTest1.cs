@@ -60,7 +60,7 @@ namespace KaprekarUnitTestProject
         [TestMethod]
         public void Test11()
         {
-            Assert.AreEqual(4873, Kaprekar.getNumber(11));
+            Assert.AreEqual(4879, Kaprekar.getNumber(11));
         }
         [TestMethod]
         public void Test12()
