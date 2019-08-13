@@ -10,7 +10,11 @@ namespace UnitTestPerson
         [TestMethod]
         public void TestNewPersonIsLedig()
         {
-            
+            Person.Person neuling = new Person.Person();
+            Assert.AreEqual(true, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
         }
     }
 }
