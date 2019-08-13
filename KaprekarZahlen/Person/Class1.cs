@@ -17,59 +17,35 @@ namespace Person
         bool verheiratet;
         bool geschieden;
         bool verwitwet;
+       
 
         public void heiraten()
         {
-            if (ledig == true)
-            {
-                ledig = false;
-                verheiratet = true;
-            }
-
-            if (geschieden==true)
-            {
-                geschieden = false;
-                verheiratet = true;
-            }
-
-            if (verwitwet==true)
-            {
-                verwitwet = false;
-                verheiratet = true;
-            }
+            verheiratet = true;
+            ledig = false;
         }
-
         public void annulieren()
         {
-            if (verheiratet==true)
+            if (verheiratet == true)
             {
                 verheiratet = false;
                 ledig = true;
             }
-
-            if (geschieden==true)
+            else if (geschieden == true)
             {
                 geschieden = false;
                 verheiratet = true;
             }
         }
-
         public void scheiden()
         {
-            if(verheiratet==true)
-            {
-                verheiratet = false;
-                geschieden = true;
-            }
+            geschieden = true;
+            verheiratet = false;
         }
-
         public void PartnerTod()
         {
-            if(verheiratet==true)
-            {
-                verheiratet = false;
-                verwitwet = true;
-            }
+            verwitwet = true;
+            verheiratet = false;
         }
     }
 }
