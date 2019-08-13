@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using KaprekarZahlen;
 
 namespace KaprekarUnitTestProject
 {
@@ -21,5 +22,6 @@ namespace KaprekarUnitTestProject
         {
             Assert.AreEqual(45, Kaprekar.getNumber(3));
         }
+
     }
 }
