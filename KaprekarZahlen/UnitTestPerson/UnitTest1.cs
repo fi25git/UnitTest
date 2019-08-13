@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Person;
 
 namespace UnitTestPerson
 {
@@ -7,7 +8,7 @@ namespace UnitTestPerson
     public class UnitTest1
     {
         [TestMethod]
-        public void TestNeu()
+        public void TestNewPersonIsLedig()
         {
             
         }
