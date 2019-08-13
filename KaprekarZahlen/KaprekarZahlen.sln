@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaprekarZahlen", "KaprekarZahlen\KaprekarZahlen.csproj", "{18FE866A-92B1-4B62-9790-01FB86C59CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaprekarUnitTestProject", "KaprekarUnitTestProject\KaprekarUnitTestProject.csproj", "{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18FE866A-92B1-4B62-9790-01FB86C59CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FE866A-92B1-4B62-9790-01FB86C59CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FE866A-92B1-4B62-9790-01FB86C59CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FE866A-92B1-4B62-9790-01FB86C59CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3DD1FD0-902E-4515-8CEE-2E0AF5A5DBBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BEBDE74-7F02-4418-B919-FCCBBABD7889}
+	EndGlobalSection
+EndGlobal
