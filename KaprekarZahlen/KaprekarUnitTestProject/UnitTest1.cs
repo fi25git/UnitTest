@@ -60,7 +60,7 @@ namespace KaprekarUnitTestProject
         [TestMethod]
         public void Test11()
         {
-            Assert.AreEqual(4873, Kaprekar.getNumber(11));
+            Assert.AreEqual(4879, Kaprekar.getNumber(11));
         }
         [TestMethod]
         public void Test12()
@@ -92,5 +92,46 @@ namespace KaprekarUnitTestProject
         {
             Assert.AreEqual(9999, Kaprekar.getNumber(17));
         }
+        [TestMethod]
+        public void Test18()
+        {
+            Assert.AreEqual(17344, Kaprekar.getNumber(18));
+        }
+        [TestMethod]
+        public void Test19()
+        {
+            Assert.AreEqual(22222, Kaprekar.getNumber(19));
+        }
+        [TestMethod]
+        public void Test20()
+        {
+            Assert.AreEqual(38962, Kaprekar.getNumber(20));
+        }
+        [TestMethod]
+        public void Test21()
+        {
+            Assert.AreEqual(77778, Kaprekar.getNumber(21));
+        }
+        [TestMethod]
+        public void Test22()
+        {
+            Assert.AreEqual(82656, Kaprekar.getNumber(22));
+        }
+        [TestMethod]
+        public void Test23()
+        {
+            Assert.AreEqual(95121, Kaprekar.getNumber(23));
+        }
+        [TestMethod]
+        public void Test24()
+        {
+            Assert.AreEqual(99999, Kaprekar.getNumber(24));
+        }
+        [TestMethod]
+        public void Test25()
+        {
+            Assert.AreEqual(142857, Kaprekar.getNumber(25));
+        }
+
     }
 }
