@@ -8,27 +8,44 @@ namespace Person
 {
     public class Person
     {
-        public bool Ledig { get; set; }
-        public bool Verheiratet { get; set; }
-        public bool Geschieden{ get; set; }
-        public bool Verwitwet { get; set; }
+        public bool Ledig { get { return ledig; } }
+        public bool Verheiratet { get { return verheiratet; } }
+        public bool Geschieden{ get { return geschieden; } }
+        public bool Verwitwet { get { return verwitwet; } }
+
+        bool ledig;
+        bool verheiratet;
+        bool geschieden;
+        bool verwitwet;
+       
 
         public void heiraten()
         {
-            Person neuling = new Person();
-            neuling.Verheiratet = true; 
+            verheiratet = true;
+            ledig = false;
         }
         public void annulieren()
         {
-
+            if (verheiratet == true)
+            {
+                verheiratet = false;
+                ledig = true;
+            }
+            else if (geschieden == true)
+            {
+                geschieden = false;
+                verheiratet = true;
+            }
         }
         public void scheiden()
         {
-
+            geschieden = true;
+            verheiratet = false;
         }
         public void PartnerTod()
         {
-
+            verwitwet = true;
+            verheiratet = false;
         }
     }
 }
