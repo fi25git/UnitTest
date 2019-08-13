@@ -7,40 +7,42 @@ using System.Threading.Tasks;
 namespace KaprekarZahlen
 {
     public class Kaprekar
-    {   
-        public static int Paprika(int n)
+    {
+        public static int getNumber(int n)
         {
-            int zahl = 0;
-            int zaehler = 1;
-            if (n == 1) { return n; }
-            for (int i = 1; i < n; i++)
+            if (n < 1) throw new ArithmeticException("es gibt keine 0te Kaprikazahl");
+            int count = 0;
+            int a = 1;
+            while (true)
             {
-                
-                int quadrat = zaehler * zaehler;
-                if ((quadrat.ToString().Length % 2) == 0)
+                if (IsKaprekar(a))
                 {
-                    int teiler = (quadrat.ToString().Length / 2);
-                    int zwerg = (Convert.ToInt32(quadrat.ToString().Substring(0, teiler))) + (Convert.ToInt32(quadrat.ToString().Substring(teiler, teiler)));
-
-                    if (zwerg == zaehler)
-                    {
-                        zahl++;
-                        if (n == zahl)
-                        {
-                            return zaehler;
-                        }
-                        zaehler++;
-                    }
+                    count++;
+                    if (count == n) return a;
                 }
-                else
-                {
-                    zaehler++;
-                    break;
-                }
+                a++;
             }
-            return n; 
-            
         }
-        
+
+        private static bool IsKaprekar(int a)
+        {
+            long zw = (long)a * (long)a;
+            if (zw < 0) throw new ArithmeticException();
+            string ziffern = zw.ToString();
+            int teil = ziffern.Length / 2;
+            int rest = ziffern.Length % 2;
+            string vorn = ziffern.Substring(0, teil);
+            string hinten = ziffern.Substring(teil, teil + rest);
+            int b = vorn.Length == 0 ? 0 : Convert.ToInt32(vorn);
+            int c = Convert.ToInt32(hinten);
+
+            do {
+                if ((b + c) == a) return true;
+                if (b!=0 && b % 10 == 0) b = b / 10;
+                else break;
+            }
+            while (true);
+            return false;
+        }
     }
 }
