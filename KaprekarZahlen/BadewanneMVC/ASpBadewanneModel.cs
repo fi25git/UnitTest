@@ -46,9 +46,14 @@ namespace BadewanneMVC
             if (ModelChanged != null) { ModelChanged(this, null); }
         }
 
-        //public void ControllerInput(Object sender, EventArgs e)
-        //{
+        public void ControllerInput(Object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
-        //}
+        public void ViewChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
