@@ -8,63 +8,57 @@ namespace Person
 {
     public class Person
     {
-        public bool Ledig       { get { return ledig; } }
+        public bool Ledig { get { return ledig; } }
         public bool Verheiratet { get { return verheiratet; } }
-        public bool Geschieden  { get { return geschieden; } }
-        public bool Verwitwet   { get { return verwitwet; } }
+        public bool Geschieden{ get { return geschieden; } }
+        public bool Verwitwet { get { return verwitwet; } }
 
-        bool ledig = true;
+        bool ledig;
         bool verheiratet;
         bool geschieden;
         bool verwitwet;
+       
 
         public void heiraten()
         {
-            if (Ledig || Geschieden || Verwitwet)
+            if (ledig == true)
             {
                 verheiratet = true;
                 ledig = false;
+            }
+            else if (geschieden == true)
+            {
+                verheiratet = true;
                 geschieden = false;
+            }
+            else if (verwitwet == true)
+            {
+                verheiratet = true;
                 verwitwet = false;
             }
         }
         public void annulieren()
         {
-            if (Verheiratet)
+            if (verheiratet == true)
             {
-                ledig = true;
                 verheiratet = false;
+                ledig = true;
             }
-            if (Verwitwet)
+            else if (geschieden == true)
             {
-                verheiratet = true;
-                ledig = false;
-                verwitwet = false;
-            }
-            if (Geschieden)
-            {
-                verheiratet = true;
-                ledig = false;
                 geschieden = false;
+                verheiratet = true;
             }
         }
         public void scheiden()
         {
-            if (Verheiratet)
-            {
-                geschieden = true;
-                ledig = false;
-                verheiratet = false;
-            }
+            geschieden = true;
+            verheiratet = false;
         }
         public void PartnerTod()
         {
-            if (Verheiratet)
-            {
-                verwitwet = true;
-                ledig = false;
-                verheiratet = false;
-            }
+            verwitwet = true;
+            verheiratet = false;
         }
     }
 }
