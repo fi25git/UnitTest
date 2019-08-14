@@ -61,6 +61,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>res.resx</DependentUpon>
     </Compile>
+    <Compile Include="ThieleController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
