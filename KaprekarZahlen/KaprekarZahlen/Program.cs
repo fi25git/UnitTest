@@ -4,15 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KaprekarZahlen 
+namespace KaprekarZahlen
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Test");
-            Console.WriteLine(Kaprekar.Paprika(2)); 
-            Console.ReadLine();
+            //int zahl = 148149;
+            Console.WriteLine(ASperling.getNumber(3));
+            //Console.WriteLine("Zahl: " + zahl);
+            //ASperling.isKaprekar(zahl);
+            Console.Read();
         }
     }
 }
