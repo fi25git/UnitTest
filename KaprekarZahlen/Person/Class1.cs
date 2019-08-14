@@ -18,52 +18,65 @@ namespace Person
         bool geschieden;
         bool verwitwet;
 
+        int hochzeit = 0;
+        int scheidung = 0;
+        int witwer = 0;
+        
         public void heiraten()
         {
-            if (Ledig || Geschieden || Verwitwet)
+            if (Ledig)
             {
                 verheiratet = true;
                 ledig = false;
+                hochzeit++;
+            }
+            if (Geschieden)
+            {
+                verheiratet = true;                
                 geschieden = false;
+                hochzeit++;
+            }
+            if (Verwitwet)
+            {
+                verheiratet = true;               
                 verwitwet = false;
+                hochzeit++;
             }
         }
         public void annulieren()
         {
-            if (Verheiratet)
+            if (Verheiratet && hochzeit==1)
             {
                 ledig = true;
                 verheiratet = false;
             }
-            if (Verwitwet)
+            if (Verheiratet && witwer >= 1)
             {
-                verheiratet = true;
-                ledig = false;
-                verwitwet = false;
+                verheiratet = false;                
+                verwitwet = true;
             }
-            if (Geschieden)
+            if (Verheiratet && scheidung >= 1)
             {
-                verheiratet = true;
-                ledig = false;
-                geschieden = false;
+                verheiratet = false;                
+                geschieden = true;
             }
         }
         public void scheiden()
         {
             if (Verheiratet)
             {
-                geschieden = true;
-                ledig = false;
+                geschieden = true;                
                 verheiratet = false;
+                scheidung++;
             }
         }
         public void PartnerTod()
         {
             if (Verheiratet)
             {
-                verwitwet = true;
-                ledig = false;
+                verwitwet = true;                
                 verheiratet = false;
+                witwer++;
             }
         }
     }
