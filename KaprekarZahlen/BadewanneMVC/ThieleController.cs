@@ -11,6 +11,8 @@ namespace BadewanneMVC
     {
         public event EventHandler Input;
 
+       
+
         public void ModelChanged(object sender, EventArgs e)
         {
             
@@ -32,11 +34,25 @@ namespace BadewanneMVC
         private void Fuell_Click(object sender, EventArgs e)
         {
             Console.WriteLine("tets");
+
+            //Console.WriteLine(Input.GetInvocationList().Length);
+
             if (Input != null)
             {
-                Console.WriteLine("wir versuchen zu fuellen");
+
                 ((IBadewanneModel)Input.GetInvocationList()[0].Target).fuellen(10);
             }
         }
     }
+
+    class ControllerEventArgs : EventArgs
+    {
+        public ControllerEventArgs(string msg)
+        {
+            this.msg = msg;
+        }
+        string msg;
+        public string Message { get { return msg; }}
+    }
+
 }

@@ -31,5 +31,6 @@ namespace BadewanneMVC
         event EventHandler Input;
         void ModelChanged(Object sender, EventArgs e);
         void ViewChanged(Object sender, EventArgs e);
+    
     }
 }
