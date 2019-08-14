@@ -15,6 +15,14 @@ namespace BadewanneMVC
         public Form1()
         {
             InitializeComponent();
+            IBadewanneModel m = new ASpBadewanneModel();
+            KlannView1 v = new KlannView1();
+
+            m.ModelChanged += v.ModelChanged;
+            m.fuellen(50);
+            m.fuellen(20);
         }
+
+    
     }
 }

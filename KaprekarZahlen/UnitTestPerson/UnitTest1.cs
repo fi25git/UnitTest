@@ -18,36 +18,102 @@ namespace UnitTestPerson
         }
 
         [TestMethod]
-        public void TestNewPersonIsGeschieden()
+        public void TestPersonLedig2Verheiratet()
         {
-            Person.Person geschiedene = new Person.Person();
-            Assert.AreEqual(false, geschiedene.Ledig);
-            Assert.AreEqual(true, geschiedene.Geschieden);
-            Assert.AreEqual(false, geschiedene.Verheiratet);
-            Assert.AreEqual(false, geschiedene.Verwitwet);
-
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(true, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
         }
-
         [TestMethod]
-        public void TestNewPersonIsVerheireitet()
+        public void TestPersonLedig2Verheiratet2annuliert()
         {
-            Person.Person verheiratete = new Person.Person();
-            Assert.AreEqual(false, verheiratete.Ledig);
-            Assert.AreEqual(false, verheiratete.Geschieden);
-            Assert.AreEqual(true, verheiratete.Verheiratet);
-            Assert.AreEqual(false, verheiratete.Verwitwet);
-           
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.annulieren();
+            Assert.AreEqual(true, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
         }
-        
         [TestMethod]
-        public void TestNewPersonIsVerwitwet()
+        public void TestPersonledig2Verheiratet2Geschieden()
         {
-            Person.Person verwitwet = new Person.Person();
-            Assert.AreEqual(false, verwitwet.Ledig);
-            Assert.AreEqual(false, verwitwet.Geschieden);
-            Assert.AreEqual(false, verwitwet.Verheiratet);
-            Assert.AreEqual(true, verwitwet.Verwitwet);
-
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.scheiden();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(true, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
+        }
+        [TestMethod]
+        public void TestPersonledig2Verheiratet2Verwitvert()
+        {
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.PartnerTod();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(true, neuling.Verwitwet);
+        }
+        [TestMethod]
+        public void TestPersonledig2Verheiratet2Verwitvert2Heirat2anulliert()
+        {
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.PartnerTod();
+            neuling.heiraten();
+            neuling.annulieren();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(true, neuling.Verwitwet);
+        }
+        [TestMethod]
+        public void TestPersonledig2Verheiratet2geschieden2Heirat2anulliert()
+        {
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.scheiden();
+            neuling.heiraten();
+            neuling.annulieren();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(true, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
+        }
+        [TestMethod]
+        public void TestPersonledig2Verheiratet2geschieden2Verheiratet2geschieden2Verheiratet()
+        {
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.scheiden();
+            neuling.heiraten();
+            neuling.scheiden();
+            neuling.heiraten();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(false, neuling.Geschieden);
+            Assert.AreEqual(true, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
+        }
+        [TestMethod]
+        public void TestPersonledig2Verheiratet2Verwitwert2Verheiratet2scheiden2Verheiraten2annulieren()
+        {
+            Person.Person neuling = new Person.Person();
+            neuling.heiraten();
+            neuling.PartnerTod();
+            neuling.heiraten();
+            neuling.scheiden();
+            neuling.heiraten();
+            neuling.annulieren();
+            Assert.AreEqual(false, neuling.Ledig);
+            Assert.AreEqual(true, neuling.Geschieden);
+            Assert.AreEqual(false, neuling.Verheiratet);
+            Assert.AreEqual(false, neuling.Verwitwet);
         }
     }
 }
