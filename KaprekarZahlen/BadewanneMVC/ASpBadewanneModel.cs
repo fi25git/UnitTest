@@ -32,10 +32,7 @@ namespace BadewanneMVC
             {
                 fuellstand = 0;
             }
-            if (ModelChanged != null)
-            {
-                ModelChanged(this, null);
-            }
+            if (ModelChanged != null) { ModelChanged(this, null); }
         }
 
         public void fuellen(int liter)
@@ -46,10 +43,12 @@ namespace BadewanneMVC
                 fuellstand = kapazitaet;
                 voll = true;
             }
-            if (ModelChanged != null)
-            {
-                ModelChanged(this, null);
-            }
+            if (ModelChanged != null) { ModelChanged(this, null); }
         }
+
+        //public void ControllerInput(Object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
