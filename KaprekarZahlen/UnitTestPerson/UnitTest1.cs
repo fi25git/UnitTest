@@ -101,7 +101,7 @@ namespace UnitTestPerson
             Assert.AreEqual(false, neuling.Verwitwet);
         }
         [TestMethod]
-        public void TestPersonledig2Verheiratet2Verwitwert2Verheiratent2scheiden2Verheiratet2annulieren()
+        public void TestPersonledig2Verheiratet2Verwitwert2Verheiratet2scheiden2Verheiraten2annulieren()
         {
             Person.Person neuling = new Person.Person();
             neuling.heiraten();
@@ -115,21 +115,5 @@ namespace UnitTestPerson
             Assert.AreEqual(false, neuling.Verheiratet);
             Assert.AreEqual(false, neuling.Verwitwet);
         }
-        [TestMethod]
-        public void TestPersonledig2Verheiratet2scheiden2Verheiratent2verwitwert2Verheiratet2annulieren()
-        {
-            Person.Person neuling = new Person.Person();
-            neuling.heiraten();
-            neuling.scheiden();
-            neuling.heiraten();
-            neuling.PartnerTod();
-            neuling.heiraten();
-            neuling.annulieren();
-            Assert.AreEqual(false, neuling.Ledig);
-            Assert.AreEqual(false, neuling.Geschieden);
-            Assert.AreEqual(false, neuling.Verheiratet);
-            Assert.AreEqual(true, neuling.Verwitwet);
-        }
-
     }
 }

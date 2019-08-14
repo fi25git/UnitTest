@@ -10,7 +10,7 @@ namespace Person
     {
         public bool Ledig { get { return ledig; } }
         public bool Verheiratet { get { return verheiratet; } }
-        public bool Geschieden{ get { return geschieden; } }
+        public bool Geschieden { get { return geschieden; } }
         public bool Verwitwet { get { return verwitwet; } }
 
         bool ledig = true;
@@ -19,7 +19,7 @@ namespace Person
         bool verwitwet;
         bool witwer;
         bool ehemann;
-       
+
 
         public void heiraten()
         {
@@ -47,7 +47,7 @@ namespace Person
                 verheiratet = false;
                 ledig = true;
             }
-            else if (verheiratet == true && witwer == true )
+            else if (verheiratet == true && witwer == true)
             {
                 verwitwet = true;
                 verheiratet = false;
@@ -70,6 +70,6 @@ namespace Person
             verwitwet = true;
             verheiratet = false;
             witwer = true;
-        }
+        } 
     }
 }
