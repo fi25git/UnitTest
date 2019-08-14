@@ -16,5 +16,15 @@ namespace BadewanneMVC
         {
             InitializeComponent();
         }
+
+        private void btnAuf_Click(object sender, EventArgs e)
+        {
+            füllen(10);
+        }
+
+        private void btnAb_Click(object sender, EventArgs e)
+        {
+            ablassen(10);
+        }
     }
 }
