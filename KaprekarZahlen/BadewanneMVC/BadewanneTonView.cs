@@ -32,6 +32,7 @@ namespace BadewanneMVC
             speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
             if (!((IBadewanneModel)sender).Voll)
             {
+                
                 speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
             }
             if (((IBadewanneModel)sender).Voll)
