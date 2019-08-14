@@ -18,12 +18,22 @@ namespace BadewanneMVC
             IBadewanneModel m = new ASpBadewanneModel();
             IBadewanneView v = new KlannView1();
             IBadewanneView tv = new BadewanneTonView();
+            IBadewanneController c = new ThieleController();
+            c.Input += m.ControllerInput;
 
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
             m.fuellen(50);
             m.fuellen(20);
             m.fuellen(230);
+            
+
+        }
+
+        private void btnAuf_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }
