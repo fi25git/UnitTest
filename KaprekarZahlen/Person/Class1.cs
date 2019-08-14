@@ -70,6 +70,6 @@ namespace Person
             verwitwet = true;
             verheiratet = false;
             witwer = true;
-        }
+        } 
     }
 }
