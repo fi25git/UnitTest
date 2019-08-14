@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.thieleController1 = new BadewanneMVC.ThieleController();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +43,20 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // thieleController1
+            // 
+            this.thieleController1.Location = new System.Drawing.Point(28, 28);
+            this.thieleController1.Name = "thieleController1";
+            this.thieleController1.Size = new System.Drawing.Size(155, 132);
+            this.thieleController1.TabIndex = 1;
+            this.thieleController1.Text = "thieleController1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.thieleController1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -59,6 +69,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ThieleController thieleController1;
     }
 }
 
