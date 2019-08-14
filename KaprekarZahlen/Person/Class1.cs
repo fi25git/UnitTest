@@ -21,10 +21,20 @@ namespace Person
 
         public void heiraten()
         {
-            if (ledig == true || geschieden == true || verwitwet == true)
+            if (ledig == true)
             {
                 verheiratet = true;
                 ledig = false;
+            }
+            else if (geschieden == true)
+            {
+                verheiratet = true;
+                geschieden = false;
+            }
+            else if (verwitwet == true)
+            {
+                verheiratet = true;
+                verwitwet = false;
             }
         }
         public void annulieren()
