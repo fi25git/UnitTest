@@ -13,7 +13,7 @@ namespace Person
         public bool Geschieden{ get { return geschieden; } }
         public bool Verwitwet { get { return verwitwet; } }
 
-        bool ledig;
+        bool ledig = true;
         bool verheiratet;
         bool geschieden;
         bool verwitwet;
