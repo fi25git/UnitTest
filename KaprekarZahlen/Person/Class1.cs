@@ -17,6 +17,8 @@ namespace Person
         bool verheiratet;
         bool geschieden;
         bool verwitwet;
+        bool witwer;
+        bool ehemann;
        
 
         public void heiraten()
@@ -35,30 +37,38 @@ namespace Person
             {
                 verheiratet = true;
                 verwitwet = false;
+                witwer = true;
             }
         }
         public void annulieren()
         {
-            if (verheiratet == true)
+            if (verheiratet == true && witwer == false && ehemann == false)
             {
                 verheiratet = false;
                 ledig = true;
             }
-            else if (geschieden == true)
+            else if (verheiratet == true && witwer == true )
             {
-                geschieden = false;
-                verheiratet = true;
+                verwitwet = true;
+                verheiratet = false;
+            }
+            else if (verheiratet == true && ehemann == true)
+            {
+                geschieden = true;
+                verheiratet = false;
             }
         }
         public void scheiden()
         {
             geschieden = true;
             verheiratet = false;
+            ehemann = true;
         }
         public void PartnerTod()
         {
             verwitwet = true;
             verheiratet = false;
+            witwer = true;
         }
     }
 }
