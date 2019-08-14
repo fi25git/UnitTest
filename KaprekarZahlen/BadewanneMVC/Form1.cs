@@ -15,16 +15,14 @@ namespace BadewanneMVC
         public Form1()
         {
             InitializeComponent();
+            IBadewanneModel m = new ASpBadewanneModel();
+            KlannView1 v = new KlannView1();
+
+            m.ModelChanged += v.ModelChanged;
+            m.fuellen(50);
+            m.fuellen(20);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }
