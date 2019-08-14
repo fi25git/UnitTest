@@ -10,6 +10,7 @@ namespace BadewanneMVC
 
     class BadewanneTonView : IBadewanneView
     {
+        // Text-to-Speech Objekt erstellen
         SpeechSynthesizer speaker = new SpeechSynthesizer();
 
         public event EventHandler ViewChanged;
@@ -21,21 +22,22 @@ namespace BadewanneMVC
 
         public void ModelChanged(object sender, EventArgs e)
         {
+            // Sprachgeschwindigkeit
             speaker.Rate = 1;
+            // Lautstärke
             speaker.Volume = 100;
+            // Spracheinstellung
             speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
             int restmenge = ((IBadewanneModel)sender).Kapazitaet - ((IBadewanneModel)sender).Fuellstand;
+            speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
             if (!((IBadewanneModel)sender).Voll)
-                speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
-            speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+            {
+                speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+            }
             if (((IBadewanneModel)sender).Voll)
             {
                 speaker.SpeakAsync("Achtung die Badewanne läuft über!");
-
             }
         }
-
-
-
     }
 }
