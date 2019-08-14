@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person", "Person\Person.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestPerson", "UnitTestPerson\UnitTestPerson.csproj", "{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadewanneMVC", "BadewanneMVC\BadewanneMVC.csproj", "{013DCBE2-54A5-4753-B5CC-05388914D310}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5379B55E-FBE3-4E9A-9179-8A4F2310DDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013DCBE2-54A5-4753-B5CC-05388914D310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013DCBE2-54A5-4753-B5CC-05388914D310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013DCBE2-54A5-4753-B5CC-05388914D310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013DCBE2-54A5-4753-B5CC-05388914D310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
