@@ -13,27 +13,23 @@ namespace BadewanneMVC
         SpeechSynthesizer speaker = new SpeechSynthesizer();
 
         public event EventHandler ViewChanged;
-        int fuellstand;
 
-
-        public void fuellen(int liter)
+        public void ModelChanged(object sender, EventArgs e)
         {
-            fuellstand += liter;
-        }
-        public void ablassen(int liter)
-        {
-            fuellstand += liter;
-        }
-        public void TexttoSpeech()
-        {
-            speaker.Rate = 1;
+             speaker.Rate = 1;
             speaker.Volume = 100;
             speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
-            speaker.SpeakAsync("Der Füllstand beträgt: " + fuellstand);
+           
+
+                speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
+          if( ((IBadewanneModel)sender).Voll)
+            {
+                speaker.SpeakAsync("Achtung die Badewanne läuft über!");
+
+            }
         }
-       
-            
-            
+
+
 
     }
 }
