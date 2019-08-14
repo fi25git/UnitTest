@@ -15,15 +15,21 @@ namespace BadewanneMVC
         int Kapazitaet { get; }
         void fuellen(int liter);
         void ablassen(int liter);
+        void ControllerInput(Object sender, EventArgs e);
+        void ViewChanged(Object sender, EventArgs e);
     }
 
     interface IBadewanneView
     {
         event EventHandler ViewChanged;
+        void ModelChanged(Object sender, EventArgs e);
+        void ControllerInput(Object sender, EventArgs e);
     }
 
     interface IBadewanneController
     {
         event EventHandler Input;
+        void ModelChanged(Object sender, EventArgs e);
+        void ViewChanged(Object sender, EventArgs e);
     }
 }
