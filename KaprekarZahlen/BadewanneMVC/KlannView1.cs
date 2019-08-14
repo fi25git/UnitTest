@@ -16,6 +16,11 @@ namespace BadewanneMVC
         }
         public event EventHandler ViewChanged;
 
+        public void ControllerInput(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ModelChanged(object sender, EventArgs e)
 
         {
