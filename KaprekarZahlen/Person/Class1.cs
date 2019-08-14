@@ -63,6 +63,7 @@ namespace Person
             geschieden = true;
             verheiratet = false;
             ehemann = true;
+            witwer = false;
         }
         public void PartnerTod()
         {
