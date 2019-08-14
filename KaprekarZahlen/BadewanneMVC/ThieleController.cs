@@ -12,9 +12,5 @@ namespace BadewanneMVC
         public event EventHandler Input;
 
         
-
-        ThieleController c = new ThieleController();
-        
-        IBadewanneController += IBadewanneModel;
     }
 }
