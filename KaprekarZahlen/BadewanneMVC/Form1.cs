@@ -17,13 +17,15 @@ namespace BadewanneMVC
         {
             InitializeComponent();
             IBadewanneModel m = new ASpBadewanneModel();
-            KlannView1 v = new KlannView1(this);
+            progressBar = new ProgressBar();
+            KlannView1 v = new KlannView1(this,progressBar);
 
             m.ModelChanged += v.ModelChanged;
             m.fuellen(50);
             m.fuellen(20);
 
-            progressBar = new ProgressBar();
+            
+            //progressBar.Increment(50);
             this.Controls.Add(progressBar);
         }
 
