@@ -17,8 +17,10 @@ namespace BadewanneMVC
             InitializeComponent();
             IBadewanneModel m = new ASpBadewanneModel();
             KlannView1 v = new KlannView1();
+            ThieleController c = new ThieleController();
 
             m.ModelChanged += v.ModelChanged;
+            c.ControllerInput += m.ControllerInput;
             m.fuellen(50);
             m.fuellen(20);
         }

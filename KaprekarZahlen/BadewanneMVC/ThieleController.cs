@@ -9,8 +9,8 @@ namespace BadewanneMVC
 {
     class ThieleController : Control, IBadewanneController
     {
-        public event EventHandler Input;
+        public event EventHandler ControllerInput;
 
-        
+                
     }
 }
