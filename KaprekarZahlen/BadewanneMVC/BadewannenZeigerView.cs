@@ -32,7 +32,7 @@ namespace BadewanneMVC
         {
             base.OnPaint(e);
             float winkel = (float)Val / (float)MaxVal * 360.0f;
-            e.Graphics.DrawArc(Pens.Aqua, new Rectangle(this.Location, this.Size), 0.0f, winkel);
+            e.Graphics.DrawArc(Pens.Aqua, new Rectangle(new Point(0,0), this.Size), -90.0f, winkel);
         }
     }
 }
