@@ -29,24 +29,31 @@ namespace BadewanneMVC
 
                 string voll = "Zur Kenntnis: die Badewanne ist schon voll";
                 string ueber = "Huee: schließe sofort den Hahn ab";
+                string halbvoll = "50% sind ereicht";
+                string vorsicht = "Die Badewanne ist auf 90% gefüllt";
                 string leer = "Badewanne ist noch leer. Mach doch was!";
                 int fstand = ((IBadewanneModel)sender).Fuellstand;
                 int volume = ((IBadewanneModel)sender).Kapazitaet;
 
-                if (fstand > 0 && fstand < 30)
+                if (fstand > 0 && fstand < 300)
                 {
-                    while (fstand == 30 && fstand == 0)
+                    do
                     {
                         MessageBox.Show("Badewanne enthält " + (volume - fstand) + " Liter");
 
                     }
+                    while (fstand == 300 && fstand == 0);
 
                 }
-                if (!((IBadewanneModel)sender).Voll)
+                if (((IBadewanneModel)sender).Voll)
                     MessageBox.Show(voll);
+                if (fstand == 270)
+                    MessageBox.Show(vorsicht);
+                if (fstand == 150)
+                    MessageBox.Show(halbvoll);
                 if (fstand == 0)
                     MessageBox.Show(leer);
-                if (fstand > 30)
+                if (fstand > 300)
                     MessageBox.Show(ueber);
                 
                 
