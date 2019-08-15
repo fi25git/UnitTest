@@ -21,10 +21,7 @@ namespace BadewanneMVC
 
         public void ModelChanged(object sender, EventArgs e)
         {
-            if(speaker.State == SynthesizerState.Speaking)
-            {
-                speaker.SpeakAsyncCancelAll();
-            }
+           
             // Sprachgeschwindigkeit
             speaker.Rate = 1;
             // Lautstärke
@@ -44,9 +41,13 @@ namespace BadewanneMVC
             }
             if (restmenge > Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)/2-5 && restmenge < Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet) / 2 +5)
             {
+               
                 speaker.SpeakAsync("Die Badewann ist zur hälfte gefüllt");
                 speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
-                
+                 if (speaker.State == SynthesizerState.Speaking)
+                {
+                    speaker.SpeakAsyncCancelAll();
+                }
             }
             if (restmenge == Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet) * 0.75)
             {
