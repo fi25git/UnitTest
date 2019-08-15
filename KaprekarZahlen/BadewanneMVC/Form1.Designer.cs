@@ -37,10 +37,10 @@ namespace BadewanneMVC
             // 
             // badewannenZeigerView1
             // 
-            this.badewannenZeigerView1.Location = new System.Drawing.Point(484, 324);
+            this.badewannenZeigerView1.Location = new System.Drawing.Point(337, 54);
             this.badewannenZeigerView1.MaxVal = 300;
             this.badewannenZeigerView1.Name = "badewannenZeigerView1";
-            this.badewannenZeigerView1.Size = new System.Drawing.Size(77, 73);
+            this.badewannenZeigerView1.Size = new System.Drawing.Size(97, 90);
             this.badewannenZeigerView1.TabIndex = 2;
             this.badewannenZeigerView1.Text = "badewannenZeigerView1";
             this.badewannenZeigerView1.Val = 0;
