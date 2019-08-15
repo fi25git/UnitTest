@@ -57,6 +57,7 @@ namespace BadewanneMVC
             this.BackgroundImage = global::BadewanneMVC.res.badewanne1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.zallmanzigController1 = new ZallmanzigController();
             this.Controls.Add(this.zallmanzigController1);
             this.Controls.Add(this.thieleController1);
             this.Name = "Form1";
