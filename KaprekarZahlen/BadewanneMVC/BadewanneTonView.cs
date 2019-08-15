@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Speech.Synthesis;
 
 namespace BadewanneMVC
-{ 
+{
     class BadewanneTonView : IBadewanneView
     {
         // Text-to-Speech Objekt erstellen
@@ -21,27 +21,45 @@ namespace BadewanneMVC
 
         public void ModelChanged(object sender, EventArgs e)
         {
-                if(speaker.State == SynthesizerState.Speaking)
+            if(speaker.State == SynthesizerState.Speaking)
             {
                 speaker.SpeakAsyncCancelAll();
             }
-                // Sprachgeschwindigkeit
-                speaker.Rate = 1;
-                // Lautstärke
-                speaker.Volume = 100;
-                // Spracheinstellung
-                speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
-                int restmenge = ((IBadewanneModel)sender).Kapazitaet - ((IBadewanneModel)sender).Fuellstand;
+            // Sprachgeschwindigkeit
+            speaker.Rate = 1;
+            // Lautstärke
+            speaker.Volume = 100;
+            // Spracheinstellung
+            speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
+            int restmenge = ((IBadewanneModel)sender).Kapazitaet - ((IBadewanneModel)sender).Fuellstand;
+            if (restmenge == Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet))
+            {
+                speaker.SpeakAsync("Die Badewanne ist leer");
+                speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+            }
+            if (restmenge == Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)*0.25)
+            {
                 speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
-                if (!((IBadewanneModel)sender).Voll)
-                {
-                    speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
-                }
-                if (((IBadewanneModel)sender).Voll)
-                {
-                    speaker.SpeakAsync("Achtung die Badewanne läuft über!");
-                }
-            
+                speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+            }
+            if (restmenge > Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)/2-5 && restmenge < Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet) / 2 +5)
+            {
+                speaker.SpeakAsync("Die Badewann ist zur hälfte gefüllt");
+                speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+                
+            }
+            if (restmenge == Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet) * 0.75)
+            {
+                speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
+                speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+            }
+
+
+            if (((IBadewanneModel)sender).Voll)
+            {
+                speaker.SpeakAsync("Achtung die Badewanne läuft über!");
+            }
+
         }
     }
 }
