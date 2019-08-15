@@ -32,10 +32,10 @@ namespace BadewanneMVC
 
             
             //progressBar.Increment(50);
-            this.Controls.Add(progressBar);
+            //this.Controls.Add(progressBar);
             
-            progressBar.Location = new System.Drawing.Point(350, 350);
-            progressBar.Maximum = m.Kapazitaet;
+            //progressBar.Location = new System.Drawing.Point(350, 350);
+            //progressBar.Maximum = m.Kapazitaet;
         }
 
         private void M_ModelChanged(object sender, EventArgs e)
@@ -55,9 +55,9 @@ namespace BadewanneMVC
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            double zwerg = (this.ClientSize.Height - progressBar.Height) / 1.3;
-            progressBar.Top = Convert.ToInt32(zwerg);
-            progressBar.Left = (this.ClientSize.Width - progressBar.Width) / 2;
+            //double zwerg = (this.ClientSize.Height - progressBar.Height) / 1.3;
+            //progressBar.Top = Convert.ToInt32(zwerg);
+            //progressBar.Left = (this.ClientSize.Width - progressBar.Width) / 2;
 
 
         }
