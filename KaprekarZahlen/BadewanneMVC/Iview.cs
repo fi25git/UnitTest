@@ -39,7 +39,7 @@ namespace BadewanneMVC
                 {
                     do
                     {
-                        MessageBox.Show("Badewanne enthält " + (volume - fstand) + " Liter");
+                        MessageBox.Show("Badewanne enthält " + (fstand) + " Liter");
 
                     }
                     while (fstand == 270 && fstand == 0);
