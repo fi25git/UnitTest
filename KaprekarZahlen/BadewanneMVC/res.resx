@@ -124,4 +124,97 @@
   <data name="badewanne1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\badewanne1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="badewanne10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne100.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne110.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne120.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne130.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne140.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne150.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne160.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne180.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne190.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne210.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne220.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne230.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne240" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne240.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne250" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne250.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne260" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne260.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne270.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne280.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne290.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne30.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne40.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne70.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne80.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne90.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

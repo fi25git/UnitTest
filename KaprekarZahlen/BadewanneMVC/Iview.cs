@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
+
+
 namespace BadewanneMVC
     {
-        class Iview : IBadewanneView
+        class Iview : Form1, IBadewanneView
         {
             public event EventHandler ViewChanged;
 
@@ -27,34 +29,36 @@ namespace BadewanneMVC
             public void Zustandwechsel(object sender, EventArgs e)
             {
 
-                string voll = "Zur Kenntnis: die Badewanne ist schon voll";
-                string ueber = "Huee: schließe sofort den Hahn ab";
+            //string voll = "Zur Kenntnis: die Badewanne ist schon voll";
+                string voll = "Hu, schließe sofort den Hahn ab";
+                
                 string halbvoll = "50% sind ereicht";
                 string vorsicht = "Die Badewanne ist auf mehr als 90% gefüllt";
                 string leer = "Badewanne ist noch leer. Mach doch was!";
                 int fstand = ((IBadewanneModel)sender).Fuellstand;
                 int volume = ((IBadewanneModel)sender).Kapazitaet;
 
-                if (fstand > 0 && fstand < 270)
-                {
-                    do
-                    {
-                        MessageBox.Show("Badewanne enthält " + (fstand) + " Liter");
+                //if (fstand > 0 && fstand < 270)
+                //{
+                //    do
+                //    {
+                //        MessageBox.Show("Badewanne enthält " + (fstand) + " Liter");
 
-                    }
-                    while (fstand == 270 && fstand == 0);
+                //    }
+                //    while (fstand == 270 && fstand == 0);
 
-                }
-                if (((IBadewanneModel)sender).Voll)
-                    MessageBox.Show(voll);
-                if (fstand > 270 && 300 < fstand)
+                //}
+               // if (((IBadewanneModel)sender).Voll)
+                if (fstand == 299)
+                MessageBox.Show(voll);
+                
+                    if (fstand > 270 && fstand < 272)
                     MessageBox.Show(vorsicht);
-                if (fstand == 150)
+                if (fstand >= 150 && fstand < 151)
                     MessageBox.Show(halbvoll);
                 if (fstand == 0)
                     MessageBox.Show(leer);
-                if (fstand > 300)
-                    MessageBox.Show(ueber);
+               
                 
                 
 

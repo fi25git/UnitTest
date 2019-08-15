@@ -12,6 +12,11 @@ namespace BadewanneMVC
     {
         public event EventHandler Input;
 
+        // Timer 
+        Timer timer = new Timer();
+        RadioButton offen = new RadioButton();
+        RadioButton geschlossen = new RadioButton();
+
         public void ModelChanged(object sender, EventArgs e)
         {
 
@@ -24,17 +29,32 @@ namespace BadewanneMVC
 
         public ZallmanzigController()
         {
-            RadioButton offen = new RadioButton();
+            timer.Start();
+            timer.Tick += Timer_Tick;
+            timer.Interval = 1000;
+
+            // Radio Button Offen
+            
             offen.Location = new Point(0, 10);
             offen.Text = "Offen";
             this.Controls.Add(offen);
             offen.CheckedChanged += Offen_CheckedChanged;
 
-            RadioButton geschlossen = new RadioButton();
+            // Radio Button Geschlossen
+            
             geschlossen.Location = new Point(0, 50);
             geschlossen.Text = "geschlossen";
+            geschlossen.Checked = true;
             this.Controls.Add(geschlossen);
             geschlossen.CheckedChanged += Geschlossen_CheckedChanged;
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (offen.Checked == true)
+            {
+                ((IBadewanneModel)Input.GetInvocationList()[0].Target).fuellen(1);
+            }
         }
 
         private void Geschlossen_CheckedChanged(object sender, EventArgs e)
@@ -46,7 +66,5 @@ namespace BadewanneMVC
         {
             
         }
-
-
     }
 }
