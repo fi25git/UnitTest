@@ -48,7 +48,8 @@ namespace BadewanneMVC
 
         public void ControllerInput(Object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
+            Console.WriteLine("Model erreicht");
         }
 
         public void ViewChanged(object sender, EventArgs e)

@@ -10,9 +10,11 @@ namespace BadewanneMVC
     class KlannView1: IBadewanneView
     {
         Form1 form1;
-        public KlannView1(Form1 form1)
+        ProgressBar progressBar;
+        public KlannView1(Form1 form1, ProgressBar progressBar)
         {
             this.form1 = form1;
+            this.progressBar = progressBar;
         }
         public event EventHandler ViewChanged;
 
@@ -28,7 +30,7 @@ namespace BadewanneMVC
             
             PictureBox pictureBox1 = new PictureBox();
             pictureBox1.Image = res.badewanne;
-            form1.progressBar.Increment(50);
+            form1.progressBar.Increment(((IBadewanneModel)sender).Fuellstand);
            
         }
     }
