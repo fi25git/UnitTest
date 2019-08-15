@@ -42,11 +42,11 @@ namespace BadewanneMVC
             this.thieleController1.TabIndex = 0;
             this.thieleController1.Text = "thieleController1";
             // 
-            // zallmanzigController1
+            // zallmanzigController2
             // 
-            this.zallmanzigController1.Location = new System.Drawing.Point(126, 54);
-            this.zallmanzigController1.Name = "zallmanzigController1";
-            this.zallmanzigController1.Size = new System.Drawing.Size(140, 90);
+            this.zallmanzigController1.Location = new System.Drawing.Point(204, 54);
+            this.zallmanzigController1.Name = "zallmanzigController2";
+            this.zallmanzigController1.Size = new System.Drawing.Size(103, 90);
             this.zallmanzigController1.TabIndex = 1;
             this.zallmanzigController1.Text = "zallmanzigController1";
             // 
@@ -57,6 +57,7 @@ namespace BadewanneMVC
             this.BackgroundImage = global::BadewanneMVC.res.badewanne1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.zallmanzigController1 = new ZallmanzigController();
             this.Controls.Add(this.zallmanzigController1);
             this.Controls.Add(this.thieleController1);
             this.Name = "Form1";
@@ -72,6 +73,7 @@ namespace BadewanneMVC
 
         private ThieleController thieleController1;
         private ZallmanzigController zallmanzigController1;
+        
     }
 }
 
