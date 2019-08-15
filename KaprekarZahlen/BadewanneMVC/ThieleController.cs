@@ -9,9 +9,7 @@ namespace BadewanneMVC
 {
     class ThieleController:Control, IBadewanneController
     {
-        public event EventHandler Input;
-
-       
+        public event EventHandler Input;       
 
         public void ModelChanged(object sender, EventArgs e)
         {
@@ -52,15 +50,4 @@ namespace BadewanneMVC
             }
         }
     }
-
-    class ControllerEventArgs : EventArgs
-    {
-        public ControllerEventArgs(string msg)
-        {
-            this.msg = msg;
-        }
-        string msg;
-        public string Message { get { return msg; }}
-    }
-
 }
