@@ -19,15 +19,19 @@ namespace BadewanneMVC
             IBadewanneModel m = new ASpBadewanneModel();
             progressBar = new ProgressBar();
             KlannView1 v = new KlannView1(this,progressBar);
+            BadewanneTonView tv = new BadewanneTonView();
+            IBadewanneController c = thieleController1;
+            c.Input += m.ControllerInput;
 
             m.ModelChanged += v.ModelChanged;
-            m.fuellen(50);
-            m.fuellen(20);
+            m.ModelChanged += tv.ModelChanged;
+            //m.fuellen(50);
+            //m.fuellen(20);
 
             
             //progressBar.Increment(50);
             this.Controls.Add(progressBar);
-            progressBar.Location = new System.Drawing.Point(350, 400);
+            progressBar.Location = new System.Drawing.Point(350, 350);
             progressBar.Maximum = m.Kapazitaet;
         }
 
