@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using System.Speech.Synthesis;
 
 namespace BadewanneMVC
-{
-
+{ 
     class BadewanneTonView : IBadewanneView
     {
         // Text-to-Speech Objekt erstellen

@@ -19,8 +19,10 @@ namespace BadewanneMVC
             IBadewanneModel m = new ASpBadewanneModel();
             progressBar = new ProgressBar();
             KlannView1 v = new KlannView1(this,progressBar);
+          
 
             m.ModelChanged += v.ModelChanged;
+            
             m.fuellen(50);
             m.fuellen(20);
 
