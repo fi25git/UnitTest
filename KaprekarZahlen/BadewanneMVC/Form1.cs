@@ -12,23 +12,33 @@ namespace BadewanneMVC
 {
     public partial class Form1 : Form
     {
+        public ProgressBar progressBar;
         public Form1()
         {
             InitializeComponent();
             IBadewanneModel m = new ASpBadewanneModel();
-            IBadewanneView v = new KlannView1(this, progressBar);
-            IBadewanneView tv = new BadewanneTonView();
-            IBadewanneController c = thieleController1;
-            c.Input += m.ControllerInput;
-            
+            progressBar = new ProgressBar();
+            KlannView1 v = new KlannView1(this,progressBar);
+
             m.ModelChanged += v.ModelChanged;
-            m.ModelChanged += tv.ModelChanged;
             m.fuellen(50);
             m.fuellen(20);
-            m.fuellen(230);
+
             
+            //progressBar.Increment(50);
+            this.Controls.Add(progressBar);
+            progressBar.Location = new System.Drawing.Point(350, 400);
+            progressBar.Maximum = m.Kapazitaet;
+        }
+
+        private void M_ModelChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
 
         }
-        
     }
 }
