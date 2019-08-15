@@ -30,8 +30,8 @@ namespace BadewanneMVC
             
             PictureBox pictureBox1 = new PictureBox();
             pictureBox1.Image = res.badewanne;
-            form1.progressBar.Increment(((IBadewanneModel)sender).Fuellstand);
-           
+            //form1.progressBar.Increment(((IBadewanneModel)sender).Fuellstand);
+            form1.progressBar.Value = (((IBadewanneModel)sender).Fuellstand);
         }
     }
 }
