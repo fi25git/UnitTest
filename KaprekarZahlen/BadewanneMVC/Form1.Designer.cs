@@ -53,9 +53,9 @@
             // 
             // thieleController1
             // 
-            this.thieleController1.Location = new System.Drawing.Point(46, 28);
+            this.thieleController1.Location = new System.Drawing.Point(45, 28);
             this.thieleController1.Name = "thieleController1";
-            this.thieleController1.Size = new System.Drawing.Size(75, 23);
+            this.thieleController1.Size = new System.Drawing.Size(75, 84);
             this.thieleController1.TabIndex = 2;
             this.thieleController1.Text = "thieleController1";
             // 
