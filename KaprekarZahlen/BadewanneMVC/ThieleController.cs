@@ -28,15 +28,23 @@ namespace BadewanneMVC
             Button fuell = new Button();
             this.Controls.Add(fuell);
             fuell.Click += Fuell_Click;
+            Button ablassen = new Button();
+            this.Controls.Add(ablassen);
+            ablassen.Click += Ablassen_Click;
 
+        }
+
+        private void Ablassen_Click(object sender, EventArgs e)
+        {
+            if (Input != null)
+            {
+
+                ((IBadewanneModel)Input.GetInvocationList()[0].Target).ablassen(10);
+            }
         }
 
         private void Fuell_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("tets");
-
-            //Console.WriteLine(Input.GetInvocationList().Length);
-
             if (Input != null)
             {
 

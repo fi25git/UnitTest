@@ -29,11 +29,6 @@ namespace BadewanneMVC
             
 
         }
-
-        private void btnAuf_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
+        
     }
 }
