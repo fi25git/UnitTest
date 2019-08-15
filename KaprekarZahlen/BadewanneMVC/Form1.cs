@@ -18,8 +18,10 @@ namespace BadewanneMVC
             InitializeComponent();
             IBadewanneModel m = new ASpBadewanneModel();
             KlannView1 v = new KlannView1(this);
+            BadewanneTonView tv = new BadewanneTonView(); 
 
             m.ModelChanged += v.ModelChanged;
+            m.ModelChanged += tv.ModelChanged;
             m.fuellen(50);
             m.fuellen(20);
 
