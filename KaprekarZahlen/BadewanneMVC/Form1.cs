@@ -20,11 +20,13 @@ namespace BadewanneMVC
             progressBar = new ProgressBar();
             KlannView1 v = new KlannView1(this,progressBar);
             BadewanneTonView tv = new BadewanneTonView();
+            IBadewanneController c = thieleController1;
+            c.Input += m.ControllerInput;
 
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
-            m.fuellen(50);
-            m.fuellen(20);
+            //m.fuellen(50);
+            //m.fuellen(20);
 
             
             //progressBar.Increment(50);
