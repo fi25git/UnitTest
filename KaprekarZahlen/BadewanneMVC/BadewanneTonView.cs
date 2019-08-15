@@ -39,15 +39,12 @@ namespace BadewanneMVC
                 speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
                 speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
             }
-            if (restmenge > Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)/2-5 && restmenge < Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet) / 2 +5)
+            if (restmenge > Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)/2)
             {
                
                 speaker.SpeakAsync("Die Badewann ist zur hälfte gefüllt");
                 speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
-                 if (speaker.State == SynthesizerState.Speaking)
-                {
-                    speaker.SpeakAsyncCancelAll();
-                }
+         
             }
             if (restmenge == Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet) * 0.75)
             {
