@@ -21,23 +21,27 @@ namespace BadewanneMVC
 
         public void ModelChanged(object sender, EventArgs e)
         {
-            // Sprachgeschwindigkeit
-            speaker.Rate = 1;
-            // Lautstärke
-            speaker.Volume = 100;
-            // Spracheinstellung
-            speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
-            int restmenge = ((IBadewanneModel)sender).Kapazitaet - ((IBadewanneModel)sender).Fuellstand;
-            speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
-            if (!((IBadewanneModel)sender).Voll)
+                if(speaker.State == SynthesizerState.Speaking)
             {
-                
-                speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+                speaker.SpeakAsyncCancelAll();
             }
-            if (((IBadewanneModel)sender).Voll)
-            {
-                speaker.SpeakAsync("Achtung die Badewanne läuft über!");
-            }
+                // Sprachgeschwindigkeit
+                speaker.Rate = 1;
+                // Lautstärke
+                speaker.Volume = 100;
+                // Spracheinstellung
+                speaker.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult);
+                int restmenge = ((IBadewanneModel)sender).Kapazitaet - ((IBadewanneModel)sender).Fuellstand;
+                speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
+                if (!((IBadewanneModel)sender).Voll)
+                {
+                    speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
+                }
+                if (((IBadewanneModel)sender).Voll)
+                {
+                    speaker.SpeakAsync("Achtung die Badewanne läuft über!");
+                }
+            
         }
     }
 }
