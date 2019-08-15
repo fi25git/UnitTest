@@ -47,7 +47,7 @@ namespace BadewanneMVC
             // 
             this.zallmanzigController1.Location = new System.Drawing.Point(202, 54);
             this.zallmanzigController1.Name = "zallmanzigController1";
-            this.zallmanzigController1.Size = new System.Drawing.Size(104, 90);
+            this.zallmanzigController1.Size = new System.Drawing.Size(237, 90);
             this.zallmanzigController1.TabIndex = 1;
             this.zallmanzigController1.Text = "zallmanzigController1";
             // 
