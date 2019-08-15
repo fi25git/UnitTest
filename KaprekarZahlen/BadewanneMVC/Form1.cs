@@ -33,6 +33,7 @@ namespace BadewanneMVC
             
             //progressBar.Increment(50);
             this.Controls.Add(progressBar);
+            
             progressBar.Location = new System.Drawing.Point(350, 350);
             progressBar.Maximum = m.Kapazitaet;
         }
