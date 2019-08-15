@@ -27,6 +27,8 @@ namespace BadewanneMVC
             
             //progressBar.Increment(50);
             this.Controls.Add(progressBar);
+            progressBar.Location = new System.Drawing.Point(350, 400);
+            progressBar.Maximum = 300;
         }
 
         private void M_ModelChanged(object sender, EventArgs e)
