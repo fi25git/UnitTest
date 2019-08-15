@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASpBadewanneModel.cs" />
+    <Compile Include="BadewannenZeigerView.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BadewanneTonView.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

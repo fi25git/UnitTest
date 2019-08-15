@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
+
+
 namespace BadewanneMVC
     {
-        class Iview : IBadewanneView
+        class Iview : Form1, IBadewanneView
         {
             public event EventHandler ViewChanged;
 
@@ -28,7 +30,7 @@ namespace BadewanneMVC
             {
 
             //string voll = "Zur Kenntnis: die Badewanne ist schon voll";
-                string voll = "Huee: schließe sofort den Hahn ab";
+                string voll = "Hu, schließe sofort den Hahn ab";
                 
                 string halbvoll = "50% sind ereicht";
                 string vorsicht = "Die Badewanne ist auf mehr als 90% gefüllt";
@@ -46,11 +48,13 @@ namespace BadewanneMVC
                 //    while (fstand == 270 && fstand == 0);
 
                 //}
-                if (((IBadewanneModel)sender).Voll)
-                    MessageBox.Show(voll);
-                if (fstand > 270 && fstand < 300)
+               // if (((IBadewanneModel)sender).Voll)
+                if (fstand == 299)
+                MessageBox.Show(voll);
+                
+                    if (fstand > 270 && fstand < 272)
                     MessageBox.Show(vorsicht);
-                if (fstand >= 150 && fstand < 165)
+                if (fstand >= 150 && fstand < 151)
                     MessageBox.Show(halbvoll);
                 if (fstand == 0)
                     MessageBox.Show(leer);
