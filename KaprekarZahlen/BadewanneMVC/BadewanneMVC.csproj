@@ -55,6 +55,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces.cs" />
+    <Compile Include="Iview.cs" />
     <Compile Include="KlannView1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +65,9 @@
       <DependentUpon>res.resx</DependentUpon>
     </Compile>
     <Compile Include="ThieleController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZallmanzigController.cs">
       <SubType>Component</SubType>
     </Compile>
     <None Include="Properties\Settings.settings">
