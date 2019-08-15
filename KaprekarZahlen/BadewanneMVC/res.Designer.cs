@@ -73,9 +73,9 @@ namespace BadewanneMVC {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap badewanne1 {
+        internal static System.Drawing.Bitmap badewanne00 {
             get {
-                object obj = ResourceManager.GetObject("badewanne1", resourceCulture);
+                object obj = ResourceManager.GetObject("badewanne00", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
