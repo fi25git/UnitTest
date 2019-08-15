@@ -30,25 +30,25 @@ namespace BadewanneMVC
         /// </summary>
         private void InitializeComponent()
         {
-            this.thieleController1 = new BadewanneMVC.ThieleController();
             this.zallmanzigController1 = new BadewanneMVC.ZallmanzigController();
+            this.thieleController1 = new BadewanneMVC.ThieleController();
             this.SuspendLayout();
+            // 
+            // zallmanzigController1
+            // 
+            this.zallmanzigController1.Location = new System.Drawing.Point(270, 54);
+            this.zallmanzigController1.Name = "zallmanzigController1";
+            this.zallmanzigController1.Size = new System.Drawing.Size(104, 90);
+            this.zallmanzigController1.TabIndex = 1;
+            this.zallmanzigController1.Text = "zallmanzigController1";
             // 
             // thieleController1
             // 
             this.thieleController1.Location = new System.Drawing.Point(42, 54);
             this.thieleController1.Name = "thieleController1";
-            this.thieleController1.Size = new System.Drawing.Size(92, 90);
+            this.thieleController1.Size = new System.Drawing.Size(208, 90);
             this.thieleController1.TabIndex = 0;
             this.thieleController1.Text = "thieleController1";
-            // 
-            // zallmanzigController1
-            // 
-            this.zallmanzigController1.Location = new System.Drawing.Point(202, 54);
-            this.zallmanzigController1.Name = "zallmanzigController1";
-            this.zallmanzigController1.Size = new System.Drawing.Size(104, 90);
-            this.zallmanzigController1.TabIndex = 1;
-            this.zallmanzigController1.Text = "zallmanzigController1";
             // 
             // Form1
             // 
