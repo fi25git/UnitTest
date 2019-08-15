@@ -39,7 +39,7 @@ namespace BadewanneMVC
                 speaker.SpeakAsync("Der Füllstand beträgt: " + ((IBadewanneModel)sender).Fuellstand + " Liter");
                 speaker.SpeakAsync("Es können noch: " + restmenge + " Liter eingelassen werden");
             }
-            if (restmenge > Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)/2)
+            if (restmenge == Convert.ToInt32(((IBadewanneModel)sender).Kapazitaet)/2)
             {
                
                 speaker.SpeakAsync("Die Badewann ist zur hälfte gefüllt");
@@ -55,7 +55,7 @@ namespace BadewanneMVC
 
             if (((IBadewanneModel)sender).Voll)
             {
-                speaker.SpeakAsync("Achtung die Badewanne läuft über!"); //"So, jetzt aber ab nach Hause Ihr kleinen Racker!"
+                speaker.SpeakAsync("Die Badewanne ist voll"); //"So, jetzt aber ab nach Hause Ihr kleinen Racker!"
             }
 
         }
