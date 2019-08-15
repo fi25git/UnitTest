@@ -29,6 +29,7 @@ namespace BadewanneMVC
         public ZallmanzigController()
         {
             timer.Tick += Timer_Tick;
+            timer.Interval = 1000;
 
             // Radio Button Offen
             RadioButton offen = new RadioButton();
