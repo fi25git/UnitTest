@@ -58,7 +58,7 @@ namespace BadewanneMVC
 
             if (((IBadewanneModel)sender).Voll)
             {
-                speaker.SpeakAsync("Achtung die Badewanne läuft über!");
+                speaker.SpeakAsync("So, jetzt aber ab nach Hause Ihr kleinen Racker!"); //"Achtung die Badewanne läuft über!"
             }
 
         }
