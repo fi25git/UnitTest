@@ -25,6 +25,10 @@ namespace BadewanneMVC
             IBadewanneController co = zallmanzigController1;
             co.Input += m.ControllerInput;
 
+            // Nachrichten über MessageBox
+            Iview i = new Iview();
+            m.ModelChanged += i.Zustandwechsel;
+
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
             //m.fuellen(50);
