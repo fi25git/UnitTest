@@ -44,5 +44,10 @@ namespace BadewanneMVC
         {
 
         }
+
+        private void Form1_ResizeEnd(object sender, EventArgs e)
+        {
+
+        }
     }
 }
