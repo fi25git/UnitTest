@@ -24,7 +24,8 @@ namespace BadewanneMVC
             c.Input += m.ControllerInput;
             IBadewanneController co = zallmanzigController1;
             co.Input += m.ControllerInput;
-
+            BadewannenZeigerView bo = badewannenZeigerView1;
+            m.ModelChanged += bo.ModelChanged;
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
             //m.fuellen(50);

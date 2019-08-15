@@ -30,17 +30,10 @@ namespace BadewanneMVC
         /// </summary>
         private void InitializeComponent()
         {
-            this.thieleController1 = new BadewanneMVC.ThieleController();
             this.zallmanzigController1 = new BadewanneMVC.ZallmanzigController();
+            this.thieleController1 = new BadewanneMVC.ThieleController();
+            this.badewannenZeigerView1 = new BadewanneMVC.BadewannenZeigerView();
             this.SuspendLayout();
-            // 
-            // thieleController1
-            // 
-            this.thieleController1.Location = new System.Drawing.Point(42, 54);
-            this.thieleController1.Name = "thieleController1";
-            this.thieleController1.Size = new System.Drawing.Size(92, 90);
-            this.thieleController1.TabIndex = 0;
-            this.thieleController1.Text = "thieleController1";
             // 
             // zallmanzigController1
             // 
@@ -50,6 +43,24 @@ namespace BadewanneMVC
             this.zallmanzigController1.TabIndex = 1;
             this.zallmanzigController1.Text = "zallmanzigController1";
             // 
+            // thieleController1
+            // 
+            this.thieleController1.Location = new System.Drawing.Point(42, 54);
+            this.thieleController1.Name = "thieleController1";
+            this.thieleController1.Size = new System.Drawing.Size(135, 90);
+            this.thieleController1.TabIndex = 0;
+            this.thieleController1.Text = "thieleController1";
+            // 
+            // badewannenZeigerView1
+            // 
+            this.badewannenZeigerView1.Location = new System.Drawing.Point(484, 324);
+            this.badewannenZeigerView1.MaxVal = 300;
+            this.badewannenZeigerView1.Name = "badewannenZeigerView1";
+            this.badewannenZeigerView1.Size = new System.Drawing.Size(77, 73);
+            this.badewannenZeigerView1.TabIndex = 2;
+            this.badewannenZeigerView1.Text = "badewannenZeigerView1";
+            this.badewannenZeigerView1.Val = 90;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -57,8 +68,10 @@ namespace BadewanneMVC
             this.BackgroundImage = global::BadewanneMVC.res.badewanne1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.badewannenZeigerView1);
             this.Controls.Add(this.zallmanzigController1);
             this.Controls.Add(this.thieleController1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -72,6 +85,7 @@ namespace BadewanneMVC
 
         private ThieleController thieleController1;
         private ZallmanzigController zallmanzigController1;
+        private BadewannenZeigerView badewannenZeigerView1;
     }
 }
 
