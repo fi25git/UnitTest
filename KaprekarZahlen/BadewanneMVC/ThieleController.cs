@@ -10,8 +10,8 @@ namespace BadewanneMVC
 {
     class ThieleController:Control, IBadewanneController
     {
-        public event EventHandler Input;       
-
+        public event EventHandler Input;
+       
         public void ModelChanged(object sender, EventArgs e)
         {
             
@@ -26,15 +26,14 @@ namespace BadewanneMVC
         {
             Button fuell = new Button();
             fuell.Location = new Point(0, 10);
-            fuell.Text = "Füllen";
+            fuell.Text = "Füllen";            
             this.Controls.Add(fuell);
             fuell.Click += Fuell_Click;
             Button ablassen = new Button();
             ablassen.Location = new Point(0, 50);
             ablassen.Text = "Ablassen";
             this.Controls.Add(ablassen);
-            ablassen.Click += Ablassen_Click;
-
+            ablassen.Click += Ablassen_Click;           
         }
 
         private void Ablassen_Click(object sender, EventArgs e)
@@ -51,6 +50,6 @@ namespace BadewanneMVC
             {
                 ((IBadewanneModel)Input.GetInvocationList()[0].Target).fuellen(10);
             }
-        }
+        }        
     }
 }

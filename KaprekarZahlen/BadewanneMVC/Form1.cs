@@ -22,6 +22,8 @@ namespace BadewanneMVC
             BadewanneTonView tv = new BadewanneTonView();
             IBadewanneController c = thieleController1;
             c.Input += m.ControllerInput;
+            IBadewanneController co = zallmanzigController1;
+            co.Input += m.ControllerInput;
 
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
@@ -45,12 +47,9 @@ namespace BadewanneMVC
 
         }
 
-        private void Form1_Resize(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            double zwerg = (this.ClientSize.Height - progressBar.Height) / 1.3;
-            progressBar.Top = Convert.ToInt32(zwerg);
-            progressBar.Left = (this.ClientSize.Width - progressBar.Width) / 2;
-            //progressBar.Location = new System.Drawing.Point(breite, hoehe);
+
         }
     }
 }
