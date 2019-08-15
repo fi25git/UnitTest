@@ -44,5 +44,13 @@ namespace BadewanneMVC
         {
 
         }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            double zwerg = (this.ClientSize.Height - progressBar.Height) / 1.3;
+            progressBar.Top = Convert.ToInt32(zwerg);
+            progressBar.Left = (this.ClientSize.Width - progressBar.Width) / 2;
+            //progressBar.Location = new System.Drawing.Point(breite, hoehe);
+        }
     }
 }
