@@ -16,7 +16,7 @@ namespace BadewanneMVC
         {
             InitializeComponent();
             IBadewanneModel m = new ASpBadewanneModel();
-            IBadewanneView v = new KlannView1();
+            IBadewanneView v = new KlannView1(this, progressBar);
             IBadewanneView tv = new BadewanneTonView();
             IBadewanneController c = thieleController1;
             c.Input += m.ControllerInput;
