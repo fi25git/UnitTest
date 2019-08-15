@@ -30,10 +30,20 @@ namespace BadewanneMVC
         /// </summary>
         private void InitializeComponent()
         {
+            this.badewannenZeigerView1 = new BadewanneMVC.BadewannenZeigerView();
             this.zallmanzigController1 = new BadewanneMVC.ZallmanzigController();
             this.thieleController1 = new BadewanneMVC.ThieleController();
-            this.badewannenZeigerView1 = new BadewanneMVC.BadewannenZeigerView();
             this.SuspendLayout();
+            // 
+            // badewannenZeigerView1
+            // 
+            this.badewannenZeigerView1.Location = new System.Drawing.Point(337, 54);
+            this.badewannenZeigerView1.MaxVal = 300;
+            this.badewannenZeigerView1.Name = "badewannenZeigerView1";
+            this.badewannenZeigerView1.Size = new System.Drawing.Size(97, 90);
+            this.badewannenZeigerView1.TabIndex = 2;
+            this.badewannenZeigerView1.Text = "badewannenZeigerView1";
+            this.badewannenZeigerView1.Val = 0;
             // 
             // zallmanzigController1
             // 
@@ -51,21 +61,11 @@ namespace BadewanneMVC
             this.thieleController1.TabIndex = 0;
             this.thieleController1.Text = "thieleController1";
             // 
-            // badewannenZeigerView1
-            // 
-            this.badewannenZeigerView1.Location = new System.Drawing.Point(484, 324);
-            this.badewannenZeigerView1.MaxVal = 300;
-            this.badewannenZeigerView1.Name = "badewannenZeigerView1";
-            this.badewannenZeigerView1.Size = new System.Drawing.Size(77, 73);
-            this.badewannenZeigerView1.TabIndex = 2;
-            this.badewannenZeigerView1.Text = "badewannenZeigerView1";
-            this.badewannenZeigerView1.Val = 90;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BadewanneMVC.res.badewanne1;
+            this.BackgroundImage = global::BadewanneMVC.res.badewanne00;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.badewannenZeigerView1);

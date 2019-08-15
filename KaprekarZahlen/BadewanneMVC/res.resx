@@ -121,7 +121,7 @@
   <data name="badewanne" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\badewanne.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="badewanne1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="badewanne00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\badewanne1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="badewanne10" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -156,9 +156,6 @@
   </data>
   <data name="badewanne190" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\badewanne190.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="badewanne2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\badewanne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="badewanne20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\badewanne20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -197,6 +194,9 @@
     <value>Resources\badewanne30.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="badewanne300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\badewanne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badewanne3000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\badewanne300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="badewanne40" type="System.Resources.ResXFileRef, System.Windows.Forms">

@@ -31,8 +31,15 @@ namespace BadewanneMVC
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            float winkel = (float)Val / (float)MaxVal * 360.0f;
-            e.Graphics.DrawArc(Pens.Aqua, new Rectangle(new Point(0, 0), this.Size), -90.0f, winkel);
+            float prozent = (float)Val / (float)MaxVal;
+
+            float winkel = prozent * 360.0f;
+            Pen p = new Pen(Brushes.Green, 10.0f);
+            if (prozent > .6f) p = new Pen(Brushes.Yellow, 15.0f);
+            if (prozent > .85f) p = new Pen(Brushes.Orange, 20.0f);
+            if (prozent > .99f) p = new Pen(Brushes.Red, 30.0f);
+
+            e.Graphics.DrawArc(p, new Rectangle(new Point(0, 0), this.Size), -90.0f, winkel);
         }
     }
 }

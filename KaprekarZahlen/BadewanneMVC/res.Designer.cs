@@ -73,9 +73,9 @@ namespace BadewanneMVC {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap badewanne1 {
+        internal static System.Drawing.Bitmap badewanne00 {
             get {
-                object obj = ResourceManager.GetObject("badewanne1", resourceCulture);
+                object obj = ResourceManager.GetObject("badewanne00", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,16 +186,6 @@ namespace BadewanneMVC {
         internal static System.Drawing.Bitmap badewanne190 {
             get {
                 object obj = ResourceManager.GetObject("badewanne190", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap badewanne2 {
-            get {
-                object obj = ResourceManager.GetObject("badewanne2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +316,16 @@ namespace BadewanneMVC {
         internal static System.Drawing.Bitmap badewanne300 {
             get {
                 object obj = ResourceManager.GetObject("badewanne300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badewanne3000 {
+            get {
+                object obj = ResourceManager.GetObject("badewanne3000", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
