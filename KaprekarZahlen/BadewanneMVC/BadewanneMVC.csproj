@@ -104,5 +104,95 @@
   <ItemGroup>
     <None Include="Resources\badewanne.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne180.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne220.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne230.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne240.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne250.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne260.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne270.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne290.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badewanne300.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
