@@ -31,6 +31,7 @@ namespace BadewanneMVC
         private void InitializeComponent()
         {
             this.thieleController1 = new BadewanneMVC.ThieleController();
+            this.zallmanzigController1 = new BadewanneMVC.ZallmanzigController();
             this.SuspendLayout();
             // 
             // thieleController1
@@ -41,6 +42,14 @@ namespace BadewanneMVC
             this.thieleController1.TabIndex = 0;
             this.thieleController1.Text = "thieleController1";
             // 
+            // zallmanzigController1
+            // 
+            this.zallmanzigController1.Location = new System.Drawing.Point(226, 54);
+            this.zallmanzigController1.Name = "zallmanzigController1";
+            this.zallmanzigController1.Size = new System.Drawing.Size(140, 90);
+            this.zallmanzigController1.TabIndex = 1;
+            this.zallmanzigController1.Text = "zallmanzigController1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -48,9 +57,11 @@ namespace BadewanneMVC
             this.BackgroundImage = global::BadewanneMVC.res.badewanne1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.zallmanzigController1);
             this.Controls.Add(this.thieleController1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -59,6 +70,7 @@ namespace BadewanneMVC
         #endregion
 
         private ThieleController thieleController1;
+        private ZallmanzigController zallmanzigController1;
     }
 }
 

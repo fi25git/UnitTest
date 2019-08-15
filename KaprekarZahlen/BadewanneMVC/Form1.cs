@@ -22,6 +22,8 @@ namespace BadewanneMVC
             BadewanneTonView tv = new BadewanneTonView();
             IBadewanneController c = thieleController1;
             c.Input += m.ControllerInput;
+            IBadewanneController co = zallmanzigController1;
+            co.Input += m.ControllerInput;
 
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
@@ -41,6 +43,11 @@ namespace BadewanneMVC
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

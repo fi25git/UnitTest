@@ -66,6 +66,9 @@
     <Compile Include="ThieleController.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ZallmanzigController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
