@@ -32,6 +32,7 @@ namespace BadewanneMVC
         {
             this.thieleController1 = new BadewanneMVC.ThieleController();
             this.zallmanzigController1 = new BadewanneMVC.ZallmanzigController();
+            this.txtfstand = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // thieleController1
@@ -46,24 +47,35 @@ namespace BadewanneMVC
             // 
             this.zallmanzigController1.Location = new System.Drawing.Point(202, 54);
             this.zallmanzigController1.Name = "zallmanzigController1";
-            this.zallmanzigController1.Size = new System.Drawing.Size(104, 90);
+            this.zallmanzigController1.Size = new System.Drawing.Size(237, 90);
             this.zallmanzigController1.TabIndex = 1;
             this.zallmanzigController1.Text = "zallmanzigController1";
+            // 
+            // txtfstand
+            // 
+            this.txtfstand.AutoSize = true;
+            this.txtfstand.Location = new System.Drawing.Point(354, 387);
+            this.txtfstand.Name = "txtfstand";
+            this.txtfstand.Size = new System.Drawing.Size(0, 13);
+            this.txtfstand.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::BadewanneMVC.res.badewanne1;
+            this.BackgroundImage = global::BadewanneMVC.res.badewanne2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtfstand);
             this.Controls.Add(this.zallmanzigController1);
             this.Controls.Add(this.thieleController1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -72,6 +84,7 @@ namespace BadewanneMVC
 
         private ThieleController thieleController1;
         private ZallmanzigController zallmanzigController1;
+        private Label txtfstand;
     }
 }
 

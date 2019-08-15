@@ -25,18 +25,20 @@ namespace BadewanneMVC
             IBadewanneController co = zallmanzigController1;
             co.Input += m.ControllerInput;
 
-            // Nachrichten über MessageBox
-            Iview i = new Iview();
-            m.ModelChanged += i.Zustandwechsel;
+            
 
             m.ModelChanged += v.ModelChanged;
             m.ModelChanged += tv.ModelChanged;
             //m.fuellen(50);
             //m.fuellen(20);
 
-            
+            // Nachrichten über MessageBox
+            Iview i = new Iview();
+            m.ModelChanged += i.Zustandwechsel;
+
             //progressBar.Increment(50);
             this.Controls.Add(progressBar);
+            
             progressBar.Location = new System.Drawing.Point(350, 350);
             progressBar.Maximum = m.Kapazitaet;
         }

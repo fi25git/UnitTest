@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
+
 namespace BadewanneMVC
     {
         class Iview : IBadewanneView
@@ -47,10 +48,11 @@ namespace BadewanneMVC
 
                 //}
                 if (((IBadewanneModel)sender).Voll)
-                    MessageBox.Show(voll);
+                    
+                    //MessageBox.Show(voll);
                 if (fstand > 270 && fstand < 300)
                     MessageBox.Show(vorsicht);
-                if (fstand >= 150 && fstand < 165)
+                if (fstand >= 150 && fstand < 151)
                     MessageBox.Show(halbvoll);
                 if (fstand == 0)
                     MessageBox.Show(leer);
